@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+        }
+        .represent {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, black, #29005C);
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr;
+        }
+        .content-1 {
+            width: 100vw;
+            height: 100vh;
+            background-color: pink;
+        }
+        .represent-left {
+            width: 40vw;
+            height: 100vh;
+            align-items: center;
+            display: grid;
+            grid-template-rows: auto;
+            color: white;
+            float: right;
+        }
+        #represent-left-group {
+        }
+        #represent-left-category {
+            color: white;
+            font-size: 20px;
+            display: block;
+        }
+        #represent-left-title {
+            font-weight: bold;
+            font-size: 70px;
+            width: 35vw;
+            background: linear-gradient(135deg, #DDCDFF, #bcddfd);
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .represent-right {
+            width: 60vw;
+            height: 100vh;
+            align-items: center;
+            display: grid;
+        }
+        #represent-right-thumbnail {
+            width: 600px;
+            height: 600px;
+            background-color: black;
+            border-radius: 30px;
+            display: block;
+            margin-left: 10%;
+        }
+    </style>
+    <body>
+        <div class="represent">
+            <div class="represent-left">
+                <div id="represent-left-group">
+                    <div id="represent-left-category">
+                        Deep Learning from Scratch
+                    </div>
+                    <div id="represent-left-title">
+                        Convolutional Neural Networks
+                    </div>
+                </div>
+            </div>
+            <div class="represent-right">
+                <div id="represent-right-thumbnail">
+                </div>
+            </div>
+        </div>
+        <div class="content-1">
+        </div>
+    </body>
+</html>

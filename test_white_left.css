@@ -1,0 +1,26 @@
+.left {
+    background-color: white;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#left-group {
+    display: grid;
+}
+
+.index_num {
+    font-size: 20px;
+    color: #7f7f7f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.index_num.active {
+    color: black;
+}
