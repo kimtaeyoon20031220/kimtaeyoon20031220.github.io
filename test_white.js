@@ -51,15 +51,19 @@ let contentIndex = document.querySelectorAll(".index_num");
 let one = -1;
 let pre = -1;
 
+let scrollTime = 0;
+
 addEventListener("mousewheel", e => {
     if (e.deltaY > 0) { // 아래로 내려가면.
         topBar.classList.remove("active");
+        scrollTime += 1;
     } else {
+        scrollTime -= 1;
         if (this.scrollY > 100) {
             topBar.classList.add("active");
         } else {
             topBar.classList.remove("active");
         }
     }
+    console.log(scrollTime);
 });
-
