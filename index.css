@@ -32,7 +32,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-image: url("profile.svg");
+    background-image: url("https://raw.githubusercontent.com/kimtaeyoon20031220/kimtaeyoon20031220.github.io/f4de23f9ba9b5df5e2064347795bd31037a0cf03/profile.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
