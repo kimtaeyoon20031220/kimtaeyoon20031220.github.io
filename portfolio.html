@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div class="cursor"></div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;600;800;900&display=swap" rel="stylesheet">
+        <title></title>
+        <link rel="stylesheet" class="main_css" type="text/css" href="portfolio.css">
+    </head>
+
+    <body>
+        <div class="space">
+            <div class="bottom-circle"></div>
+            <div class="top-square"></div>
+            <div></div>
+            <div class="container">
+                <div class="columns-center">
+                    <div class="title">
+                        <span>Portfolio</span>
+                        <div></div>
+                        <div class="title-left-box">
+                            <img src="arrow-left-circle.svg" width="35px" height="35px">
+                            <span class="title-page">
+                                <span class="title-page-now">1</span>
+                                <span class="title-page-all">/3</span>
+                            </span>
+                            <img class="right-button" src="arrow-right-circle.svg" width="35px" height="35px">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="item">
+                            <div class="thumbnail"></div>
+                            <div class="shadow">
+                                <div></div>
+                                <div class="content-title">
+                                    <a href="www.naver.com">모두의 정원</a>
+                                </div>
+                                <div class="content-stack">
+                                    <div class="content-stack-item">Jetpack Compose</div>
+                                    <div class="content-stack-item">Jetpack Navigation</div>
+                                    <div class="content-stack-item">Kotlin</div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </body>
+
+    <script>
+        let mouseCursor = document.querySelector(".cursor");
+        let navLinks = document.querySelectorAll("a");
+        //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+        window.addEventListener("scroll", cursor);
+        window.addEventListener("mousemove", cursor);
+
+        console.log(navLinks);
+        //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+        function cursor(e) {
+          mouseCursor.style.left = e.pageX + "px";
+          mouseCursor.style.top = e.pageY - scrollY + "px";
+        }
+        navLinks.forEach((link) => {
+            link.addEventListener("mouseover", () => {
+                mouseCursor.classList.add("link-grow");
+            });
+            link.addEventListener("mouseleave", () => {
+                mouseCursor.classList.remove("link-grow");
+            });
+        });
+      </script>
+</html>
