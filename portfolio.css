@@ -15,6 +15,31 @@ a {
     text-decoration: none;
     color: white;
 }
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30%, 0);
+    } to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        transform: translate(-100%, 0);
+    } to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        transform: translate(100%, 0);
+    } to {
+        transform: translate(0, 0);
+    }
+}
 
 .cursor {
     width: 1rem;
@@ -46,6 +71,7 @@ a {
     border-radius: 300px;
     bottom: 0px;
     left: -100px;
+    animation: leftToRight 1s;
 }
 
 .top-square {
@@ -57,6 +83,7 @@ a {
     top: 0;
     border-bottom-left-radius: 200px;
     background: linear-gradient(90deg, #21272c, #ffffff00);
+    animation: rightToLeft 1s;
 }
 
 .space {
@@ -72,6 +99,7 @@ a {
     margin-left: 15%;
     margin-right: 15%;
     z-index: 1;
+    animation: fadeInUp 0.5s;
 }
 
 .columns-center {
