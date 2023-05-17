@@ -64,18 +64,16 @@ a {
 }
 
 .bottom-circle {
-    background: linear-gradient(#25272c, #ffffff00);
-    width: calc(100vh * (1/2));
-    height: 50%;
+    background: linear-gradient(-90deg, #21272c, #ffffff00);
     position: absolute;
-    border-radius: 300px;
+    width: 40%;
+    height: 20%;
+    border-top-right-radius: 200px;
     bottom: 0px;
-    left: -100px;
     animation: leftToRight 1s;
 }
 
 .top-square {
-    z-index: 0;
     width: 40%;
     height: 20%;
     position: absolute;
@@ -138,12 +136,17 @@ a {
     color: #595C68;
 }
 
+.content {
+    position: relative;
+}
+
 .item {
     width: 100%;
     height: 100%;
     background-color: #4A4D56;
     border-radius: 10px;
     position: relative;
+    top: 0;
 }
 
 .thumbnail {
