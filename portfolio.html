@@ -9,6 +9,29 @@
         <link rel="stylesheet" class="main_css" type="text/css" href="portfolio.css">
     </head>
 
+    <script>
+
+        function pagePlus() {
+            if (page < 2) {
+                page++;
+                console.log(page);
+                document.querySelector(".title-page-now").innerHTML = page;
+                switch (page - 1) {
+                    case 0:
+                        document.querySelector("#item3").animate([
+                            {
+                                transform: translateX(0)
+                            },
+                            {
+                                transform: translateX(-100)
+                            }
+                        ], 1000);
+                }
+            }
+        }
+
+    </script>
+
     <body>
         <div class="space">
             <div class="bottom-circle"></div>
@@ -20,7 +43,7 @@
                         <span>Portfolio</span>
                         <div></div>
                         <div class="title-left-box">
-                            <img src="arrow-left-circle.svg" width="35px" height="35px">
+                            <img id="page-button-left" src="arrow-left-circle.svg" width="35px" height="35px" onclick="pagePlus()">
                             <span class="title-page">
                                 <span class="title-page-now">1</span>
                                 <span class="title-page-all">/3</span>
@@ -29,19 +52,26 @@
                         </div>
                     </div>
                     <div class="content">
-                        <div class="item-box">
-                            <div class="item" id="item2">
-                                <div id="item-filter-2"></div>
-                                <div class="thumbnail"></div>
-                                <div class="shadow">
-                                    <div></div>
-                                    <div class="content-title">hi</div>
-                                    <div></div>
-                                </div>
+                        <div class="item" id="item3">
+                            <div id="item-filter" style="background-color: #000000ab;"></div>
+                            <div class="thumbnail"></div>
+                            <div class="shadow">
+                                <div></div>
+                                <div class="content-title">hi</div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="item" id="item2">
+                            <div id="item-filter" style="background-color: #0000005c;"></div>
+                            <div class="thumbnail"></div>
+                            <div class="shadow">
+                                <div></div>
+                                <div class="content-title">hi</div>
+                                <div></div>
                             </div>
                         </div>
                         <a href="./modugarden.html"><div class="item" id="item1">
-                            <div id="item-filter-1"></div>
+                            <div id="item-filter"></div>
                             <div class="thumbnail"></div>
                             <div class="shadow">
                                 <div></div>
@@ -64,6 +94,9 @@
     </body>
 
     <script>
+
+        let page = 0;
+
         let mouseCursor = document.querySelector(".cursor");
         let navLinks = document.querySelectorAll("a");
         //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
@@ -84,5 +117,6 @@
                 mouseCursor.classList.remove("link-grow");
             });
         });
+
       </script>
 </html>
