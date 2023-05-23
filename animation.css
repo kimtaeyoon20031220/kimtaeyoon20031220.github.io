@@ -1,0 +1,93 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30%, 0);
+    } to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes leftToRightPage0 { /*왼쪽에서 오른쪽으로 사라짐*/
+    from {
+        left: 0;
+        scale: var(--page-scale-up);
+    } to {
+        left: var(--page-distance-right);
+        opacity: 0;
+        scale: (--page-scale-down);
+    }
+}
+
+@keyframes rightToLeftPage0 { /*오른쪽에서 왼족으로 사라짐*/
+    from {
+        left: 0;
+        scale: var(--page-scale-up);
+    } to {
+        left: var(--page-distance-left);
+        opacity: 0;
+        scale: var(--page-scale-down);
+    }
+}
+
+@keyframes leftToRightPage1 { /*왼쪽에서 오른쪽으로 나타남*/
+    from {
+        left: var(--page-distance-left);
+        opacity: 0;
+        scale: var(--page-scale-down)
+    } to {
+        left: 0;
+        scale: var(--page-scale-up);
+    }
+}
+
+@keyframes rightToLeftPage1 { /*오른쪽에서 왼쪽으로 나타남*/
+    from {
+        left: var(--page-distance-right);
+        opacity: 0;
+        scale: var(--page-scale-down);
+    } to {
+        left: 0;
+        scale: var(--page-scale-up);
+    }
+}
+
+@keyframes leftButton {
+    from {
+        left: 0;
+    } to {
+        left: -10px;
+    }
+}
+
+@keyframes rightButton {
+    from {
+        left: 0;
+    } to {
+        left: 10px;
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        transform: translate(-100%, 0);
+    } to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        transform: translate(100%, 0);
+    } to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes leftToRightButton {
+    0% {
+        transform: translate(0, 0);
+    } to {
+        transform: translate(10%, 0);
+    }
+}
