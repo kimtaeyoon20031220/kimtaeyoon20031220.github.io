@@ -22,6 +22,7 @@ a {
     text-decoration: none;
     color: white;
 }
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -236,6 +237,12 @@ a {
     position: absolute; /*item의 child 요소를 item 위에 쌓기 위함*/
     top: 50%; /*item을 세로 가운데 정렬*/
     transform: translateY(-50%); /*item을 세로 가운데 정렬*/
+    transition: 0.2s;
+}
+
+.item:hover {
+    scale: 1.03;
+    transition: 0.2s;
 }
 
 .thumbnail {
