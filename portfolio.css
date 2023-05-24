@@ -159,6 +159,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     object-position: 50% 50%;
+    background-position: center;
 }
 
 .shadow {
