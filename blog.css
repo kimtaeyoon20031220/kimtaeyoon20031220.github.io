@@ -9,10 +9,20 @@ a {
     color: #444952;
 }
 
+.bottom-circle {
+    background: linear-gradient(-90deg, #e7ebee, #cfc6c600);
+    position: fixed;
+    width: 40%;
+    height: 20%;
+    border-top-right-radius: 200px;
+    bottom: 0px;
+    animation: leftToRight 1s;
+}
+
 .top-square {
     width: 40%;
     height: 20%;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     border-bottom-left-radius: 200px;
