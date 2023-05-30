@@ -21,7 +21,7 @@ for (let i = 0; i < stackButton.length; i++) {
         stackButtonNow = stackButton[i];
         stackButtonNow.classList.add("content-item-title-1-active");
         stackDesc.innerHTML = stackInfo[i];
-    })
+    });
 }
 
 stackDesc.innerHTML = stackInfo[0];
