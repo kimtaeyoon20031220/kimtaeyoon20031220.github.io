@@ -6,7 +6,7 @@ dev_data = [
     },
     {
         "image" : "https://i.namu.wiki/i/k2nwDQNWZhSfRdbz2nPQzERjwjuWx3xxFHm3Q2m5xf868NeTGOQaGHOw_MhcqlkHqpCgk1GsLgCgUp6X-gnReiuWgGAIZjmHeHFRtWhkazrrEbfLc8fAEy6B2EpGDG9rSn1Q1nssQ7eUXB2aDSbJGg.svg",
-        "ability" : "medium",
+        "ability" : "low",
         "name" : "C++"
     },
     {
@@ -31,18 +31,13 @@ dev_data = [
     },
     {
         "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
-        "ability" : "medium",
+        "ability" : "low",
         "name" : "Javascript"
     },
     {
         "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
         "ability" : "high",
         "name" : "Python"
-    },
-    {
-        "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Tensorflow_logo.svg/1915px-Tensorflow_logo.svg.png",
-        "ability" : "low",
-        "name" : "tensorflow"
     },
 ]
 
@@ -54,7 +49,7 @@ plan_data = [
     },
     {
         "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/1024px-Notion-logo.svg.png",
-        "ability" : "medium",
+        "ability" : "high",
         "name" : "Notion"
     },
 ]
