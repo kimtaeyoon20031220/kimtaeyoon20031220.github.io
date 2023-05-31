@@ -1,116 +1,145 @@
 body {
     margin: 0;
-    background-color: black;
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 30%, 0);
-    } to {
-        opacity: 1;
-        transform: translateZ(0);
-    }
-}
-
-@keyframes leftToRight {
-    0% {
-        transform: translate(-100%, 0);
-    } to {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes rightToLeft {
-    0% {
-        transform: translate(100%, 0);
-    } to {
-        transform: translate(0, 0);
-    }
-}
-
-#background {
+    background-color: white;
     display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    font-family: 'Pretendard', sans-serif;
+    color: #444952;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#main-top-right {
+    width: 150px;
+    height: 100%;
+    display: flex;
     align-items: center;
 }
 
-#circle-top {
-    position: absolute;
-    top: -70px;
-    left: -70px;
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    background: linear-gradient(-45deg, rgba(82, 87, 99, 0.4), rgba(82, 87, 99, 0));
-    animation: leftToRight 1s;
+.top {
+    display: flex;
+    align-items: center;
 }
 
-#circle-bottom {
-    position: absolute;
-    bottom: 0px;
-    right: -90px;
-    width: 450px;
-    height: 450px;
-    border-radius: 500px;
-    background: linear-gradient(135deg, rgba(82, 87, 99, 0.4), rgba(82, 87, 99, 0));
-    animation: rightToLeft 1s;
+#top-thumbnail {
+    width: 170px;
+    height: 170px;
+    border-radius: 35px;
+    background-color: #F1F5FA;
 }
 
-#image {
-    width: 120px;
-    height: 120px;
-    background-color: #525763;
-    border-radius: 120px;
-    margin: 0 auto;
-    object-fit: cover;
-    background-image: url("https://raw.githubusercontent.com/kimtaeyoon20031220/kimtaeyoon20031220.github.io/f4de23f9ba9b5df5e2064347795bd31037a0cf03/profile.svg");
+.content {
+    display: grid;
+    grid-template-columns: 1fr 20px 1fr;
+}
+
+.content-item {
+    padding: 40px;
+    background-color: white;
+    border: 2px solid #F1F5FA;
+    border-radius: 20px;
+    box-shadow: 0 3px 30px #eff2f8;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.content-item:hover {
+    box-shadow: 0 5px 30px #d0d3d8;
+    scale: 1.02;
+    transition: 0.3s;
+}
+
+.content-title {
+    font-weight: 600;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+}
+
+.content-icon {
+    margin-right: 10px;
+    height: 40px;
+}
+
+.content-more-text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #A5ADBA;
+    font-weight: 400;
+}
+
+.content-desc {
+    font-weight: 400;
+    font-size: 16px;
+    color: #A5ADBA;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.timeline-block {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #F1F5FA;
+    font-weight: 500;
+    font-size: 13px;
+    margin-right: 20px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #F1F5FA;
+    color: #A5ADBA;
+}
+
+.timeline-text-title {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.timeline-text-content {
+    font-weight: 300;
+    font-size: 13px;
+    color: #A5ADBA;
+}
+
+.content-img-text-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-img-text-item-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #F1F5FA;
+    background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
-    animation: fadeInUp 0.5s;
 }
 
-#left-bar {
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    rotate: -90deg;
-}
-
-#bar-bar {
-    display: inline-block;
-    width: 300px;
-    height: 1px;
-    background-color: white;
-}
-
-#bar-menu {
-    color: white;
-}
-
-#title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#small-text {
-    color: white;
-    display: block;
-    text-align: center;
-    margin-top: 30px;
-    animation: fadeInUp 0.5s;
-}
-
-#text {
-    color: #525763;
-    font-weight: bolder;
-    font-size: 45px;
-    margin-top: 30px;
-    display: inline-block;
-    animation: fadeInUp 0.5s;
-    line-height: 65px;
-}
-
-.text-link {
-    color: white;
+.content-img-text-item-text {
+    margin-left: 10px;
 }

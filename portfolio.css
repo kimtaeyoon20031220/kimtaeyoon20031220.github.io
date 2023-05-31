@@ -13,8 +13,8 @@ body {
     margin: 0;
     background-color: #2F3137;
     font-family: 'Pretendard', sans-serif;
-    cursor: none;
-    overflow: hidden;
+    cursor: none; /*커서 지우기*/
+    overflow: hidden; /*화면 이상으로 넘어가는 것은 숨김 처리*/
 }
 
 a { 

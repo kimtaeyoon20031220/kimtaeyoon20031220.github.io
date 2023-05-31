@@ -1,25 +1,190 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" id="main_css" type="text/css" href="index.css">
-  </head>
-  <body>
-    <div id="background" style="background-color: black; width: 100vw; height: 100vh;">
-      <div id="circle-top"></div>
-      <div id="circle-bottom"></div>
-      <div id="title">
-        <div id="title-box">
-          <div id="image">
-            <img id="image-thumbnail">
-          </div>
-          <span id="small-text">반가워요👋 저는</span>
-          <div id="text">
-            익숙함으로부터<br>
-            새로움을 찾아내는<br>
-            <span class="text-link">기획</span> <span class="text-link">개발자</span>입니다.
-          </div>
+    <head>
+        
+        <link rel="stylesheet" class="modugarden_css" type="text/css" href="profile.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+    </head>
+    <body>
+        <div class="spacer"></div>
+        <div class="main">
+            <div class="spacer" style="height: 130px"></div>
+
+            <!--타이틀-->
+            <div class="top">
+                <img id="top-thumbnail" src="profile_image.jpeg" style="background-position: center;">
+                <span class="title" style="margin-left: 50px;">
+                    새로움을 갈망하는💡<br>
+                    프론트엔드 개발자, 김태윤입니다.
+                </span>
+            </div>
+            <div class="spacer" style="height: 70px"></div>
+
+            <!--컨텐츠 부분-->
+            <div class="content">
+                <div class="content-left">
+                    <div class="content-item">
+                        <div class="content-title">
+                            <img class="content-icon" src="education_icon.svg" height="50px">
+                            Education
+                        </div>
+                        <div class="content-desc"></div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-block" style="border: 1px solid #e3e8f1; color: #4387ED; font-weight: bold; background-color: white;">재학</div>
+                                <div class="timeline-text">
+                                    <div class="timeline-text-title">가천대학교 컴퓨터공학부(컴퓨터공학전공)</div>
+                                    <div class="timeline-text-content">2022.03 ~ </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-block">졸업</div>
+                                <div class="timeline-text">
+                                    <div class="timeline-text-title" style="color: #A5ADBA">장훈고등학교</div>
+                                    <div class="timeline-text-content">2019.03 ~ 2022.02</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-block">졸업</div>
+                                <div class="timeline-text">
+                                    <div class="timeline-text-title" style="color: #A5ADBA;">안천중학교</div>
+                                    <div class="timeline-text-content">2016.03 ~ 2019.02</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-block">졸업</div>
+                                <div class="timeline-text">
+                                    <div class="timeline-text-title" style="color: #A5ADBA;">서울두산초등학교</div>
+                                    <div class="timeline-text-content">2010.03 ~ 2016.02</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-item">
+                        <div class="content-title">
+                            <img class="content-icon" src="medal_icon.svg">
+                            Activity
+                        </div>
+                        <div class="content-desc">활동 내용과 수상 내역을 표시합니다.</div>
+                        <div class="content-img-text-item">
+                            <div class="content-img-text-item-img" style="background-image: url('goal.svg');"></div>
+                            <div class="content-img-text-item-text">
+                                <div class="timeline-text-title">
+                                    심판다
+                                </div>
+                                <div class="timeline-text-content">
+                                    2023.05 ~ (활동 중)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-img-text-item">
+                            <div class="content-img-text-item-img" style="background-image: url('prize-3.svg');"></div>
+                            <div class="content-img-text-item-text">
+                                <div class="timeline-text-title">
+                                    개인화된 3D 모델링을 이용한 패션 피팅 서비스
+                                </div>
+                                <div class="timeline-text-content">
+                                    가천대학교 2023년 1학기 창업 아이디어 공모전 (우수상)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-img-text-item">
+                            <div class="content-img-text-item-img" style="background-image: url('prize-3.svg');"></div>
+                            <div class="content-img-text-item-text">
+                                <div class="timeline-text-title">
+                                    모두의 정원
+                                </div>
+                                <div class="timeline-text-content">
+                                    UMC 3기 데모데이2 (우수상)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-img-text-item">
+                            <div class="content-img-text-item-img" style="background-image: url('goal.svg');"></div>
+                            <div class="content-img-text-item-text">
+                                <div class="timeline-text-title">
+                                    3rd University Makeus Challenge
+                                </div>
+                                <div class="timeline-text-content">
+                                    2022.09 ~ 2023.02 (동아리 활동)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-img-text-item">
+                            <div class="content-img-text-item-img" style="background-image: url('prize-2.svg');"></div>
+                            <div class="content-img-text-item-text">
+                                <div class="timeline-text-title">
+                                    사용하기 편한 보급형 키오스크 앱
+                                </div>
+                                <div class="timeline-text-content">
+                                    가천대학교 2022년 2학기 JUST-DO-IT (활동 우수상)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-img-text-item">
+                            <div class="content-img-text-item-img" style="background-image: url('prize-3.svg');"></div>
+                            <div class="content-img-text-item-text">
+                                <div class="timeline-text-title">
+                                    꿀곰 프로젝트
+                                </div>
+                                <div class="timeline-text-content">
+                                    가천대학교 2022년 1학기 TMI 프로젝트 (장려상)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="content-right">
+                    <div class="content-item">
+                        <div class="content-title">
+                            <img class="content-icon" src="bulb_icon.svg">
+                            <span>Skill</span>
+                            <span></span>
+                            <a href="skill.html">
+                                <div class="content-more-text">
+                                    모두 보기 <img src="chevron-right.svg">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="content-desc">Front-end 능력만 표시됩니다.</div>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-title">
+                            <img class="content-icon" src="call_icon.svg">
+                            Call
+                        </div>
+                        <div class="content-desc"></div>
+                        <div class="content-img-text-item">
+                            <div class="content-img-text-item-img" style="background-image: url('email.svg');"></div>
+                            <div class="content-img-text-item-text">
+                                <div class="timeline-text-title">
+                                    k0278kim@gachon.ac.kr
+                                </div>
+                                <div class="timeline-text-content">
+                                    E-mail
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-img-text-item">
+                            <div class="content-img-text-item-img" style="background-image: url('mountain-with-water.svg');"></div>
+                            <div class="content-img-text-item-text">
+                                <div class="timeline-text-title">
+                                    kim__tune
+                                </div>
+                                <div class="timeline-text-content">
+                                    Instagram
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer" style="height: 150px;"></div>
         </div>
-      </div>
-    </div>
-  </body>
+        <div class="spacer"></div>
+    </body>
+    <script type="text/javascript" src="modugarden.js"></script>
 </html>
