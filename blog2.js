@@ -1,9 +1,8 @@
-
-
 content = {
-    "title" : "",
-    "category" : "",
-    "date" : "",
+    "title" : "타이틀 디자인 title design",
+    "thumbnail" : "https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1129780/regular_1708x683_0417-an-introduction-to-deep-learning-from-perceptrons-to-deep-networks-Waldek_Newsletter-5078bdbf19aea7271f07061a3e17c463.png",
+    "category" : "딥러닝",
+    "date" : "2023년 5월 3일",
     "content" : [
         {
             "type" : "img",
@@ -39,7 +38,11 @@ dataBinding(content);
 
 function dataBinding(content) {
 
-    let j = 0;
+    let j = 0; //이미지 데이터 바인딩 대비 (이미지 순서 체크)
+
+    document.querySelector(".top-meta").innerHTML += content["category"] + " &bullet; " + content["date"];
+    document.querySelector(".title").innerHTML += content["title"];
+    document.querySelector(".thumbnail").style.backgroundImage = `url("${content["thumbnail"]}")`;
 
     for (let i = 0; i < content["content"].length; i++) {
         switch (content["content"][i]["type"]) {
