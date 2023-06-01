@@ -2,19 +2,18 @@
 <html>
     <head>
         
-        <link rel="stylesheet" class="modugarden_css" type="text/css" href="profile.css">
+        <link rel="stylesheet" class="modugarden_css" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
     </head>
     <body>
         <div class="spacer"></div>
         <div class="main">
             <div class="spacer" style="height: 130px"></div>
-
             <!--타이틀-->
             <div class="top">
                 <img id="top-thumbnail" src="profile_image.jpeg" style="background-position: center;">
                 <span class="title" style="margin-left: 50px;">
-                    새로움을 갈망하는💡<br>
+                    <span style="font-weight: 200;">새로움을 갈망하는💡</span><br>
                     프론트엔드 개발자, 김태윤입니다.
                 </span>
             </div>
@@ -64,7 +63,13 @@
                     <div class="content-item">
                         <div class="content-title">
                             <img class="content-icon" src="medal_icon.svg">
-                            Activity
+                            <span>Activity</span>
+                            <span></span>
+                            <a href="portfolio.html">
+                                <div class="content-more-text">
+                                    포트폴리오 보기 <img src="chevron-right.svg">
+                                </div>
+                            </a>
                         </div>
                         <div class="content-desc">활동 내용과 수상 내역을 표시합니다.</div>
                         <div class="content-img-text-item">
@@ -149,6 +154,47 @@
                             </a>
                         </div>
                         <div class="content-desc">Front-end 능력만 표시됩니다.</div>
+                        <div id="skill"></div>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-title">
+                            <img class="content-icon" src="">
+                            <span>Blog</span>
+                            <span></span>
+                            <a href="skill.html">
+                                <div class="content-more-text">
+                                    모두 보기 <img src="chevron-right.svg">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="content-desc"></div>
+
+                        <a href="blog.html">
+                            <div class="content-img-text-item">
+                                <div class="content-img-text-item-img" style="background-image: url('mountain-with-water.svg');"></div>
+                                <div class="content-img-text-item-text">
+                                    <div class="timeline-text-title">
+                                        블로그 작성 타이틀
+                                    </div>
+                                    <div class="timeline-text-content">
+                                        블로그 작성 카테고리
+                                    </div>
+                                </div>
+                                <div class="timeline-text-content-more"></div>
+                            </div>
+                        </a>
+                        <div class="content-img-text-item">
+                            <div class="content-img-text-item-img" style="background-image: url('');"></div>
+                            <div class="content-img-text-item-text">
+                                <div class="timeline-text-title">
+                                    블로그 작성 타이틀
+                                </div>
+                                <div class="timeline-text-content">
+                                    블로그 작성 카테고리
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="content-item">
                         <div class="content-title">
@@ -167,17 +213,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-img-text-item">
-                            <div class="content-img-text-item-img" style="background-image: url('mountain-with-water.svg');"></div>
-                            <div class="content-img-text-item-text">
-                                <div class="timeline-text-title">
-                                    kim__tune
+                        <a href="https://www.instagram.com/kim__tune">
+                            <div class="content-img-text-item">
+                                <div class="content-img-text-item-img" style="background-image: url('mountain-with-water.svg');"></div>
+                                <div class="content-img-text-item-text">
+                                    <div class="timeline-text-title">
+                                        kim__tune
+                                    </div>
+                                    <div class="timeline-text-content">
+                                        Instagram
+                                    </div>
                                 </div>
-                                <div class="timeline-text-content">
-                                    Instagram
-                                </div>
+                                <div class="timeline-text-content-more"></div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -186,5 +235,5 @@
         </div>
         <div class="spacer"></div>
     </body>
-    <script type="text/javascript" src="modugarden.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </html>
