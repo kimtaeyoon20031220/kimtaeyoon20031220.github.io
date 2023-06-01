@@ -10,6 +10,16 @@ body {
     height: 100vh;
 }
 
+#icon {
+    width: 80px;
+    height: 80px;
+    background-image: url("bulb_icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    margin-bottom: 20px;
+}
+
 #title {
     font-weight: bold;
     font-size: 60px;
