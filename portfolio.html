@@ -48,13 +48,13 @@
                             <a onclick="pageBefore()"><img id="page-button-left" src="arrow-left-circle-inactive.svg" width="35px" height="35px"></a>
                             <span class="title-page">
                                 <span class="title-page-now">1</span>
-                                <span class="title-page-all">/3</span>
+                                <span class="title-page-all">/2</span>
                             </span>
                             <a onclick="pageNext()"><img id="page-button-right" src="arrow-right-circle-active.svg" width="35px" height="35px"></a>
                         </div>
                     </div>
                     <div class="content">
-                        <div class="item" id="item3">
+                        <div class="item" id="item2">
                             <div class="thumbnail" style="background-image: url('./kkulgom.png')"></div>
                             <div class="shadow">
                                 <div></div>
@@ -67,35 +67,21 @@
                                 <div></div>
                             </div>
                         </div>
-                        <div class="item" id="item2">
-                            <div class="thumbnail" style="background-image: url('https://user-images.githubusercontent.com/19889463/222959125-f35ad7f9-f3a9-4d3b-9d8c-496e14724b74.png')"></div>
-                            <div class="shadow">
-                                <div></div>
-                                <div class="content-title">모두의 정원</div>
-                                <div class="content-stack">
-                                    <div class="content-stack-item">Jetpack Compose</div>
-                                    <div class="content-stack-item">Jetpack Navigation</div>
-                                    <div class="content-stack-item">Kotlin</div>
+                        <a href="modugarden.html">
+                            <div class="item" id="item1">
+                                <div class="thumbnail" style="background-image: url('https://user-images.githubusercontent.com/19889463/222959125-f35ad7f9-f3a9-4d3b-9d8c-496e14724b74.png')"></div>
+                                <div class="shadow">
+                                    <div></div>
+                                    <div class="content-title">모두의 정원</div>
+                                    <div class="content-stack">
+                                        <div class="content-stack-item">Jetpack Compose</div>
+                                        <div class="content-stack-item">Jetpack Navigation</div>
+                                        <div class="content-stack-item">Kotlin</div>
+                                    </div>
+                                    <div></div>
                                 </div>
-                                <div></div>
                             </div>
-                        </div>
-                        <a href="./modugarden.html"><div class="item" id="item1">
-                            <div class="thumbnail" style="background-image: url('./simpanda.png')"></div>
-                            <div class="shadow">
-                                <div></div>
-                                <div class="content-title">
-                                    심판다
-                                </div>
-                                <div class="content-stack">
-                                    <div class="content-stack-item">Flutter</div>
-                                    <div class="content-stack-item">Dart</div>
-                                    <div class="content-stack-item">Firebase</div>
-                                    <div class="content-stack-item">Shared Preferences</div>
-                                </div>
-                                <div></div>
-                            </div>
-                        </div></a>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -144,26 +130,17 @@
                     item2.style.animation = "leftToRightPage0 0.3s ease-out forwards";
                     item3.style.opacity = "0";
                 }
-                if (page == 2) { // 3->2
-                    item2.style.animation = "leftToRightPage1 0.3s ease-out forwards";
-                    item3.style.animation = "leftToRightPage0 0.3s ease-out forwards";
-                }
             }
         }
 
         function pageNext() {
-            if (page < 3) {
+            if (page < 2) {
                 page += 1;
                 document.querySelector(".title-page-now").innerHTML = page;
                 if (page == 2) { // 1->2
                     item1.style.animation = "rightToLeftPage0 0.3s ease-out forwards"; // 왼쪽으로 사라지기
                     item2.style.animation = "rightToLeftPage1 0.3s ease-out forwards";
                     item3.style.opacity = "0";
-                }
-                if (page == 3) { //2->3
-                    item2.style.animation = "rightToLeftPage0 0.3s ease-out forwards";
-                    item3.style.animation = "rightToLeftPage1 0.3s ease-out forwards";
-                    item3.style.opacity = "1";
                 }
             }
         }
