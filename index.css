@@ -12,6 +12,13 @@ a {
     text-decoration: none;
     margin-top: auto;
     margin-bottom: auto; /*content-more-text를 중앙 정렬시키기 위함*/
+    scale: 1;
+    transition: .2s;
+}
+
+a:active {
+    scale: 0.9;
+    transition: .2s;
 }
 
 .main {
