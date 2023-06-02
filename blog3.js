@@ -15,8 +15,13 @@ function dataBinding(content) {
                 document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
                 j++;
                 break;
-            case "img-no-loss":
+            case "img-no-loss-height":
                 contentDiv.innerHTML += "<div class='content-item-img' style='background-size: auto 100%'></div>";
+                document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
+                j++;
+                break;
+            case "img-no-loss-width":
+                contentDiv.innerHTML += "<div class='content-item-img' style='background-size: 100% auto'></div>";
                 document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
                 j++;
                 break;
@@ -41,17 +46,17 @@ function dataBinding(content) {
 
 content = {
     "title" : "생성적 적대 신경망 (GAN)",
-    "thumbnail" : "",
+    "thumbnail" : "https://cdn.pixabay.com/photo/2023/05/04/15/22/multi-verse-7970350_1280.jpg",
     "category" : "딥러닝",
     "date" : "2023년 6월 2일",
     "content" : [
         {
             "type" : "img",
-            "content" : ""
+            "content" : "https://cdn.pixabay.com/photo/2023/05/19/18/01/ai-generated-8005083_1280.png"
         },
         {
             "type" : "desc",
-            "content" : "출처: "
+            "content" : "출처: https://pixabay.com/ko/illustrations/ai-%EC%83%9D%EC%84%B1-%EA%B8%B0%EC%88%A0-%EA%B8%B0%EA%B3%84-%ED%95%99%EC%8A%B5-8005083/"
         },
         {
             "type" : "title",
@@ -80,12 +85,12 @@ content = {
             "생성자와 판별자는 심층 신경망으로 생성자 신경망의 출력은 판별자 신경망의 입력에 직접 연결되어 있습니다. 이로써, 판별자의 손실을 역전파하여 생성자와 판별자를 학습하는 데에 이용할 수 있습니다."
         },
         {
-            "type" : "img",
-            "content" : ""
+            "type" : "img-no-loss-width",
+            "content" : "https://blogfiles.pstatic.net/MjAxOTA2MDlfMjA1/MDAxNTYwMDA3NTg1NTU1.GtC-256rGjaWgnMgW4Z6B_RtTCYvT9GvU00Nk89swqYg.J8yIs9VeVKJ7VmwpsSMpZVsDnDE4nAG99TJlvB1WLoIg.PNG.euleekwon/image.png?type=w1"
         },
         {
             "type" : "desc",
-            "content" : ""
+            "content" : "출처: https://m.blog.naver.com/euleekwon/221557899873"
         },
         {
             "type" : "box",

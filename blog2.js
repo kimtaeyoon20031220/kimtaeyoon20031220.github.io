@@ -44,7 +44,7 @@ content = {
             "이런 식으로 데이터 간의 상관 관계를 선형적으로 표현해서 데이터가 주어졌을 때 결과를 예측하는 것이 선형 회귀가 할 수 있는 일이에요.<br>"
         },
         {
-            "type" : "img-no-loss",
+            "type" : "img-no-loss-height",
             "content" : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Regression_lineaire_avec_R.svg/500px-Regression_lineaire_avec_R.svg.png",
         },
         {
@@ -111,7 +111,7 @@ content = {
             "선형 회귀에서는 '손실 함수' 라는 것을 사용해서 데이터를 한 직선으로 얼마나 '못' 표현했는지를 계산합니다. "
         },
         {
-            "type" : "img-no-loss",
+            "type" : "img-no-loss-width",
             "content" : "https://blog.kakaocdn.net/dn/bMgddM/btrAsrpIQ10/MvTi5yAvMVjgLifqVmkKYK/img.png"
         },
         {
@@ -146,7 +146,7 @@ content = {
             "손실 함수 그래프에서는 현재 위치에서의 미분 값을 통해 어디로 내려갈지 결정합니다."
         },
         {
-            "type" : "img-no-loss",
+            "type" : "img-no-loss-height",
             "content" : "https://t1.daumcdn.net/cfile/tistory/99334E495D81B36B2F"
         },
         {
@@ -182,8 +182,13 @@ function dataBinding(content) {
                 document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
                 j++;
                 break;
-            case "img-no-loss":
+            case "img-no-loss-height":
                 contentDiv.innerHTML += "<div class='content-item-img' style='background-size: auto 100%'></div>";
+                document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
+                j++;
+                break;
+            case "img-no-loss-width":
+                contentDiv.innerHTML += "<div class='content-item-img' style='background-size: 100% auto'></div>";
                 document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
                 j++;
                 break;
