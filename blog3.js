@@ -16,7 +16,7 @@ function dataBinding(content) {
                 j++;
                 break;
             case "img-no-loss-height":
-                contentDiv.innerHTML += "<div class='content-item-img' style='background-size: auto 100%'></div>";
+                contentDiv.innerHTML += "<div class='content-item-img' style='background-size: auto 100%;'></div>";
                 document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
                 j++;
                 break;
@@ -44,7 +44,7 @@ function dataBinding(content) {
     }
 }
 
-content = {
+content3 = {
     "title" : "생성적 적대 신경망 (GAN)",
     "thumbnail" : "https://cdn.pixabay.com/photo/2023/05/04/15/22/multi-verse-7970350_1280.jpg",
     "category" : "딥러닝",
@@ -143,4 +143,4 @@ content = {
     ]
 }
 
-dataBinding(content);
+dataBinding(content3);

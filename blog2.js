@@ -1,4 +1,50 @@
-content = {
+let contentDiv = document.querySelector(".content");
+
+function dataBinding(content) {
+
+    let j = 0; //이미지 데이터 바인딩 대비 (이미지 순서 체크)
+
+    document.querySelector(".top-meta").innerHTML += content["category"] + " &bullet; " + content["date"];
+    document.querySelector(".title").innerHTML += content["title"];
+    document.querySelector(".thumbnail").style.backgroundImage = `url("${content["thumbnail"]}")`;
+
+    for (let i = 0; i < content["content"].length; i++) {
+        switch (content["content"][i]["type"]) {
+            case "img":
+                contentDiv.innerHTML += "<div class='content-item-img'></div>";
+                document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
+                j++;
+                break;
+            case "img-no-loss-height":
+                contentDiv.innerHTML += "<div class='content-item-img' style='background-size: auto 100%'></div>";
+                document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
+                j++;
+                break;
+            case "img-no-loss-width":
+                contentDiv.innerHTML += "<div class='content-item-img' style='background-size: 100% auto'></div>";
+                document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
+                j++;
+                break;
+            case "desc":
+                contentDiv.innerHTML += "<div class='content-item-desc'>" + content["content"][i]["content"] + "</div>";
+                break;
+            case "title":
+                contentDiv.innerHTML += "<div class='content-item-text-title'>" + content["content"][i]["content"] + "</div>";
+                break;
+            case "box":
+                if (content["content"][i]["title"] != "") {
+                    contentDiv.innerHTML += "<div class='content-item-text-box'>" + "<div class='content-item-text-box-title'>" + content["content"][i]["title"] + "</div>" + content["content"][i]["content"] + "</div>";
+                } else {
+                    contentDiv.innerHTML += "<div class='content-item-text-box'>" + content["content"][i]["content"] + "</div>";
+                }
+                break;
+            case "text":
+                contentDiv.innerHTML += "<div class='content-text'>" + content["content"][i]["content"] + "</div>";
+        }
+    }
+}
+
+content2 = {
     "title" : "선형 회귀",
     "thumbnail" : "https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1129780/regular_1708x683_0417-an-introduction-to-deep-learning-from-perceptrons-to-deep-networks-Waldek_Newsletter-5078bdbf19aea7271f07061a3e17c463.png",
     "category" : "딥러닝",
@@ -163,50 +209,4 @@ content = {
     ],
 };
 
-let contentDiv = document.querySelector(".content");
-
-dataBinding(content);
-
-function dataBinding(content) {
-
-    let j = 0; //이미지 데이터 바인딩 대비 (이미지 순서 체크)
-
-    document.querySelector(".top-meta").innerHTML += content["category"] + " &bullet; " + content["date"];
-    document.querySelector(".title").innerHTML += content["title"];
-    document.querySelector(".thumbnail").style.backgroundImage = `url("${content["thumbnail"]}")`;
-
-    for (let i = 0; i < content["content"].length; i++) {
-        switch (content["content"][i]["type"]) {
-            case "img":
-                contentDiv.innerHTML += "<div class='content-item-img'></div>";
-                document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
-                j++;
-                break;
-            case "img-no-loss-height":
-                contentDiv.innerHTML += "<div class='content-item-img' style='background-size: auto 100%'></div>";
-                document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
-                j++;
-                break;
-            case "img-no-loss-width":
-                contentDiv.innerHTML += "<div class='content-item-img' style='background-size: 100% auto'></div>";
-                document.querySelectorAll(".content-item-img")[j].style.backgroundImage = `url("${content["content"][i]["content"]}")`;
-                j++;
-                break;
-            case "desc":
-                contentDiv.innerHTML += "<div class='content-item-desc'>" + content["content"][i]["content"] + "</div>";
-                break;
-            case "title":
-                contentDiv.innerHTML += "<div class='content-item-text-title'>" + content["content"][i]["content"] + "</div>";
-                break;
-            case "box":
-                if (content["content"][i]["title"] != "") {
-                    contentDiv.innerHTML += "<div class='content-item-text-box'>" + "<div class='content-item-text-box-title'>" + content["content"][i]["title"] + "</div>" + content["content"][i]["content"] + "</div>";
-                } else {
-                    contentDiv.innerHTML += "<div class='content-item-text-box'>" + content["content"][i]["content"] + "</div>";
-                }
-                break;
-            case "text":
-                contentDiv.innerHTML += "<div class='content-text'>" + content["content"][i]["content"] + "</div>";
-        }
-    }
-}
+dataBinding(content2);
