@@ -86,11 +86,11 @@ content = {
         },
         {
             "type" : "img-no-loss-width",
-            "content" : "https://blogfiles.pstatic.net/MjAxOTA2MDlfMjA1/MDAxNTYwMDA3NTg1NTU1.GtC-256rGjaWgnMgW4Z6B_RtTCYvT9GvU00Nk89swqYg.J8yIs9VeVKJ7VmwpsSMpZVsDnDE4nAG99TJlvB1WLoIg.PNG.euleekwon/image.png?type=w1"
+            "content" : "https://hyeongminlee.github.io/img/GAN_001/fig_1.png"
         },
         {
             "type" : "desc",
-            "content" : "출처: https://m.blog.naver.com/euleekwon/221557899873"
+            "content" : "출처: https://wikidocs.net/146217"
         },
         {
             "type" : "box",
