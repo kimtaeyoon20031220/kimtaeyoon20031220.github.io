@@ -1,14 +1,4 @@
-dev_data = [
-    {
-        "image" : "https://i.namu.wiki/i/KcqDuQYTxNpUcLIMZTg28QXse0XiWx1G7K68kYYCo1GuhoHmhB_V8Qe9odGGt0BH9-0nQZTN53WXTNpDmwVfWQ.svg",
-        "ability" : "medium",
-        "name" : "C"
-    },
-    {
-        "image" : "https://i.namu.wiki/i/k2nwDQNWZhSfRdbz2nPQzERjwjuWx3xxFHm3Q2m5xf868NeTGOQaGHOw_MhcqlkHqpCgk1GsLgCgUp6X-gnReiuWgGAIZjmHeHFRtWhkazrrEbfLc8fAEy6B2EpGDG9rSn1Q1nssQ7eUXB2aDSbJGg.svg",
-        "ability" : "low",
-        "name" : "C++"
-    },
+frontDev_data = [
     {
         "image" : "https://i.pinimg.com/originals/6d/b1/59/6db159df526b6f5584902ebc21daca88.png",
         "ability" : "medium",
@@ -33,6 +23,19 @@ dev_data = [
         "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
         "ability" : "low",
         "name" : "Javascript"
+    },
+]
+
+otherDev_data = [
+    {
+        "image" : "https://i.namu.wiki/i/KcqDuQYTxNpUcLIMZTg28QXse0XiWx1G7K68kYYCo1GuhoHmhB_V8Qe9odGGt0BH9-0nQZTN53WXTNpDmwVfWQ.svg",
+        "ability" : "medium",
+        "name" : "C"
+    },
+    {
+        "image" : "https://i.namu.wiki/i/k2nwDQNWZhSfRdbz2nPQzERjwjuWx3xxFHm3Q2m5xf868NeTGOQaGHOw_MhcqlkHqpCgk1GsLgCgUp6X-gnReiuWgGAIZjmHeHFRtWhkazrrEbfLc8fAEy6B2EpGDG9rSn1Q1nssQ7eUXB2aDSbJGg.svg",
+        "ability" : "low",
+        "name" : "C++"
     },
     {
         "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
@@ -81,12 +84,14 @@ com_data = [
 ]
 
 
-dev = document.querySelector("#dev");
+frontDev = document.querySelector("#front-dev");
+otherDev = document.querySelector("#other-dev");
 plan = document.querySelector("#plan");
 design = document.querySelector("#design");
 com = document.querySelector("#com");
 
-dataBind(dev, dev_data, "Develop");
+dataBind(frontDev, frontDev_data, "Front-end Devs");
+dataBind(otherDev, otherDev_data, "Other Devs");
 dataBind(plan, plan_data, "Plan");
 dataBind(design, design_data, "Design");
 dataBind(com, com_data, "Communicate");

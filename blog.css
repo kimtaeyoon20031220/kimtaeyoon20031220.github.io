@@ -16,12 +16,14 @@ a {
     grid-template-columns: 1fr 6fr 1fr;
 }
 
-.content {
-    height: 100vh;
-    z-index: 2;
+.title {
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 130px;
+    margin-bottom: 70px;
 }
 
-.item-list {
+.content {
     display: grid;
     grid-template-columns: 1fr 20px 1fr;
 }

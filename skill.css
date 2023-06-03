@@ -8,37 +8,42 @@ body {
 .viewport {
     width: 100vw;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
 }
 
 #icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-image: url("bulb_icon.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 80px;
-    margin-bottom: 20px;
+    background-size: 60px;
+    margin-right: 20px;
 }
 
 #title {
+    display: flex;
+    align-items: center;
     font-weight: bold;
     font-size: 60px;
-    margin-left: 20%;
     margin-top: 10%;
-    margin-bottom: 0px;
+    margin-bottom: 70px;
 }
 
 .content {
     display: grid;
-    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-columns: 1fr 20px 1fr;
 }
 
-.left {
-    padding-right: 40px;
-}
-
-.right {
-    padding-left: 40px;
+.skill {
+    padding: 40px;
+    background-color: white;
+    border: 2px solid #F1F5FA;
+    border-radius: 20px;
+    box-shadow: 0 3px 30px #eff2f8;
+    margin-bottom: 20px;
+    transition: 0.3s;
 }
 
 .skill-title {
@@ -46,7 +51,6 @@ body {
     font-size: 30px;
     margin-bottom: 30px;
     display: block;
-    margin-top: 80px;
 }
 
 .skill-item {
@@ -61,7 +65,7 @@ body {
     width: 50px;
     height: 50px;
     background-color: #F1F5FA;
-    border-radius: 13px;
+    border-radius: 50px;
     margin-right: 20px;
     background-position: center;
     background-repeat: no-repeat;
