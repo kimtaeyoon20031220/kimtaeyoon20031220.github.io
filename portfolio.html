@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <div class="cursor"></div>
+        <!--<div class="cursor"></div>-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;600;800;900&display=swap" rel="stylesheet">
@@ -11,33 +11,59 @@
         <link rel="stylesheet" class="animation_css" type="text/css" href="animation.css">
     </head>
 
-    <script>
-
-        function pagePlus() {
-            if (page < 2) {
-                page++;
-                console.log(page);
-                document.querySelector(".title-page-now").innerHTML = page;
-                switch (page - 1) {
-                    case 0:
-                        document.querySelector("#item3").animate([
-                            {
-                                transform: translateX(0)
-                            },
-                            {
-                                transform: translateX(-100)
-                            }
-                        ], 1000);
-                }
-            }
-        }
-
-    </script>
-
     <body>
+        <div class="viewport">
+            <div class="spacer"></div>
+            <div class="main">
+                <div class="top">
+                    <div class="title">Portfolio</div>
+                    <div></div>
+                    <div class="top-left-box">
+                        <a onclick="pageBefore()"><img id="page-button-left" src="arrow-left-circle-inactive.svg" width="35px" height="35px"></a>
+                        <span class="title-page">
+                            <span class="title-page-now">1</span>
+                            <span class="title-page-all">/2</span>
+                        </span>
+                        <a onclick="pageNext()"><img id="page-button-right" src="arrow-right-circle-active.svg" width="35px" height="35px"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <a href="kkulgom.html">
+                        <div class="item" id="item2">
+                            <div class="thumbnail" style="background-image: url('./kkulgom.png')"></div>
+                            <div class="shadow">
+                                <div></div>
+                                <div class="content-title">꿀곰 프로젝트</div>
+                                <div class="content-stack">
+                                    <div class="content-stack-item">Flutter</div>
+                                    <div class="content-stack-item">Dart</div>
+                                    <div class="content-stack-item">Shared Preferences</div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="modugarden.html">
+                        <div class="item" id="item1">
+                            <div class="thumbnail" style="background-image: url('https://user-images.githubusercontent.com/19889463/222959125-f35ad7f9-f3a9-4d3b-9d8c-496e14724b74.png')"></div>
+                            <div class="shadow">
+                                <div></div>
+                                <div class="content-title">모두의 정원</div>
+                                <div class="content-stack">
+                                    <div class="content-stack-item">Jetpack Compose</div>
+                                    <div class="content-stack-item">Jetpack Navigation</div>
+                                    <div class="content-stack-item">Kotlin</div>
+                                </div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="spacer"></div>
+            </div>
+            <div class="spacer"></div>
+        </div>
         <div class="space">
-            <div class="bottom-circle"></div>
-            <div class="top-square"></div>
             <div></div>
             <div class="container">
                 <div class="columns-center">
@@ -45,45 +71,11 @@
                         <span>Portfolio</span>
                         <div></div>
                         <div class="title-left-box">
-                            <a onclick="pageBefore()"><img id="page-button-left" src="arrow-left-circle-inactive.svg" width="35px" height="35px"></a>
-                            <span class="title-page">
-                                <span class="title-page-now">1</span>
-                                <span class="title-page-all">/2</span>
-                            </span>
-                            <a onclick="pageNext()"><img id="page-button-right" src="arrow-right-circle-active.svg" width="35px" height="35px"></a>
+                            
                         </div>
                     </div>
                     <div class="content">
-                        <a href="kkulgom.html">
-                            <div class="item" id="item2">
-                                <div class="thumbnail" style="background-image: url('./kkulgom.png')"></div>
-                                <div class="shadow">
-                                    <div></div>
-                                    <div class="content-title">꿀곰 프로젝트</div>
-                                    <div class="content-stack">
-                                        <div class="content-stack-item">Flutter</div>
-                                        <div class="content-stack-item">Dart</div>
-                                        <div class="content-stack-item">Shared Preferences</div>
-                                    </div>
-                                    <div></div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="modugarden.html">
-                            <div class="item" id="item1">
-                                <div class="thumbnail" style="background-image: url('https://user-images.githubusercontent.com/19889463/222959125-f35ad7f9-f3a9-4d3b-9d8c-496e14724b74.png')"></div>
-                                <div class="shadow">
-                                    <div></div>
-                                    <div class="content-title">모두의 정원</div>
-                                    <div class="content-stack">
-                                        <div class="content-stack-item">Jetpack Compose</div>
-                                        <div class="content-stack-item">Jetpack Navigation</div>
-                                        <div class="content-stack-item">Kotlin</div>
-                                    </div>
-                                    <div></div>
-                                </div>
-                            </div>
-                        </a>
+                        
                     </div>
                 </div>
             </div>
