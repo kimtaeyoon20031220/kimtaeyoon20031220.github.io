@@ -122,7 +122,7 @@ content3 = {
         {
             "type" : "box",
             "title" : "GAN의 loss 함수",
-            "content" : "<img src='https://blogfiles.pstatic.net/MjAxOTA2MDlfMjUg/MDAxNTYwMDA4MjIxOTg3.VsSc5R6hy3Ly3AdtoF3MdcVGSWfK0k4F3z7_ExSE4yUg.da5ECd-WRnyK6Q9a2uwe8rPc5dIY-0q7kS82JHGmKdEg.PNG.euleekwon/image.png?type=w1', width='100%'>"
+            "content" : "<img src='https://www.stechstar.com/user/zbxe/files/attach/images/119/799/078/dbeaba0179430daba6f2226048733f74.png', width='100%'>"
         },
         {
             "type" : "text",
