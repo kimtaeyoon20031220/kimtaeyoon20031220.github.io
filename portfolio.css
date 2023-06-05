@@ -13,12 +13,10 @@ body {
     margin: 0;
     background-color: #1A1A1D;
     font-family: 'Pretendard', sans-serif;
-    /*cursor: none; /*커서 지우기*/
     overflow: hidden; /*화면 이상으로 넘어가는 것은 숨김 처리*/
 }
 
 a { 
-    /*cursor: none;*/
     text-decoration: none;
     color: white;
 }
@@ -30,22 +28,6 @@ a {
 #page-button-right:hover {
     transition: "rightButton 0.3s ease-out forwards";
 }
-
-/*.cursor {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1000;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: all 0.2s ease;
-    transition-property: background, transform;
-    transform-origin: 100% 100%;
-    backdrop-filter: brightness(2) ;
-    background-size: cover;
-    background-color: #ffffff12;
-}*/
 
 .viewport {
     width: 100vw;
