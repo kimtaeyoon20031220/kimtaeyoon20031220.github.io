@@ -33,7 +33,7 @@ otherDev_data = [
         "name" : "C"
     },
     {
-        "image" : "https://i.namu.wiki/i/k2nwDQNWZhSfRdbz2nPQzERjwjuWx3xxFHm3Q2m5xf868NeTGOQaGHOw_MhcqlkHqpCgk1GsLgCgUp6X-gnReiuWgGAIZjmHeHFRtWhkazrrEbfLc8fAEy6B2EpGDG9rSn1Q1nssQ7eUXB2aDSbJGg.svg",
+        "image" : "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
         "ability" : "low",
         "name" : "C++"
     },
